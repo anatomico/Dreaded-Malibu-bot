@@ -36,7 +36,7 @@ module.exports = dreaded = async (client, m, chatUpdate, store) => {
         : "";
     var budy = typeof m.text == "string" ? m.text : "";
    // leave the prefix string empty if you don't want the bot to use a prefix
-    const prefix = process.env.PREFIX || '.';
+    const prefix = process.env.PREFIX || '';
 const Heroku = require("heroku-client");  
  const appname = process.env.APP_NAME || '';
  const herokuapi = process.env.HEROKU_API;
@@ -76,7 +76,7 @@ const botname = process.env.BOTNAME || '𝐃𝐑𝐄𝐀𝐃𝐄𝐃 𝐌𝐀�
             const qmsg = (quoted.msg || quoted);
     const author = process.env.STICKER_AUTHOR || '𝐇𝐎𝐄𝐃𝐀𝐑𝐈';
     const packname = process.env.STICKER_PACKNAME || 'dreaded';
-const dev = process.env.DEV || '254114018035'
+const dev = process.env.DEV || '254743551416'
 
 const menu = process.env.MENU_TYPE || 'VIDEO';
  const DevDreaded = dev.split(",");
