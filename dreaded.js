@@ -36,14 +36,14 @@ module.exports = dreaded = async (client, m, chatUpdate, store) => {
         : "";
     var budy = typeof m.text == "string" ? m.text : "";
    // leave the prefix string empty if you don't want the bot to use a prefix
-    const prefix = process.env.PREFIX || '';
+    const prefix = process.env.PREFIX || '.';
 const Heroku = require("heroku-client");  
  const appname = process.env.APP_NAME || '';
  const herokuapi = process.env.HEROKU_API;
 const gptdm = process.env.GPT_INBOX || 'TRUE';
     const cmd = body.startsWith(prefix);
 const autobio = process.env.AUTOBIO || 'TRUE';
-const botname = process.env.BOTNAME || 'DREADED BOT';
+const botname = process.env.BOTNAME || '𝐃𝐑𝐄𝐀𝐃𝐄𝐃 𝐌𝐀𝐋𝐈𝐁𝐔 𝐁𝐎𝐓';
   
     const command = body.replace(prefix, "").trim().split(/ +/).shift().toLowerCase();
     const args = body.trim().split(/ +/).slice(1);
@@ -74,13 +74,13 @@ const botname = process.env.BOTNAME || 'DREADED BOT';
     };
     const mime = (quoted.msg || quoted).mimetype || "";
             const qmsg = (quoted.msg || quoted);
-    const author = process.env.STICKER_AUTHOR || 'fortunatus';
+    const author = process.env.STICKER_AUTHOR || '𝐇𝐎𝐄𝐃𝐀𝐑𝐈';
     const packname = process.env.STICKER_PACKNAME || 'dreaded';
 const dev = process.env.DEV || '254114018035'
 
 const menu = process.env.MENU_TYPE || 'VIDEO';
  const DevDreaded = dev.split(",");
-    const badwordkick = process.env.BAD_WORD_KICK || 'TRUE';
+    const badwordkick = process.env.BAD_WORD_KICK || 'FALSE';
    const bad = process.env.BAD_WORD || 'fuck';
     const autoreadrecord = process.env.AUTOREAD_AND_TYPE || 'TRUE';
     const badword = bad.split(",");
@@ -309,7 +309,7 @@ client.sendMessage(m.chat, {
                         contextInfo: {
                             externalAdReply: {
                                 showAdAttribution: true,
-                                title: `DREADED BOT`,
+                                title: `𝐃𝐑𝐄𝐀𝐃𝐄𝐃 𝐌𝐀𝐋𝐈𝐁𝐔 𝐁𝐎𝐓`,
                                 body: `A simple WhatsApp bot.`,
                                 thumbnail: fs.readFileSync('./dreaded.jpg'),
                                 sourceUrl: `https://github.com/Fortunatusmokaya/DREADED-GPT-AI`,
