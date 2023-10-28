@@ -1,5 +1,5 @@
 const sessionName = "dreaded1";
-const donet = "http";
+const donet = "https://github.com/kanng7/Dreaded-Malibu-bot";
 const owner = ["62856557114003"]; // This will send a notification once the bot reconnects
 const {
   default: dreadedConnect,
