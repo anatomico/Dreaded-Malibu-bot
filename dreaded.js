@@ -1083,7 +1083,7 @@ case "tutorial": case "dreaded": case "hshhs":
   
 break;
 case "termux":
-let termux = `pkg install nodejs\n\npkg install git\n\npkg install ffmpeg\n\ngit clone https://github.com/kanng7/Dreaded-Malibu-bot\n\ncd DREADED-PAIRING\n\nnpm install\n\nrm -rf session && node index.js\n\nEnter number to get corresponding pairing code.`
+let termux = `pkg install nodejs\n\npkg install git\n\npkg install ffmpeg\n\ngit clone https://github.com/kanng7/DREADED-MALIBU-BOT-PAIRING\n\ncd DREADED-PAIRING\n\nnpm install\n\nrm -rf session && node index.js\n\nEnter number to get corresponding pairing code.`
 let qx = await client.sendMessage(from, {text: termux}, {quoted:m})
 await client.sendMessage(from, {text: 'Copy paste and run this commands line by line on termux to link your account without scanning qr'}, {quoted: qx})
 break;
