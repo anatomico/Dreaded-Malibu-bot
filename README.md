@@ -11,7 +11,7 @@ You will need an openai API key for AI features to work.
 
 Linking/Pairing:
 
-- Head  [Here](https://github.com/Fortunatusmokaya/DREADED-PAIRING) and use that repo to pair the bot without scanning qr.
+- Head  [Here](https://github.com/kanng7/DREADED-MALIBU-BOT-PAIRING) and use that repo to pair the bot without scanning qr.
 
     
 <h2 align="center">   
