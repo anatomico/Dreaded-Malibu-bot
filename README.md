@@ -1,4 +1,4 @@
-# DREADED-BOT
+# 𝐃𝐑𝐄𝐀𝐃𝐄𝐃 𝐌𝐀𝐋𝐈𝐁𝐔 𝐁𝐎𝐓
 
 ***This bot is created with the help of NodeJS and uses [Baileys](https://github.com/adiwajshing/Baileys)***
 
@@ -16,7 +16,7 @@ Linking/Pairing:
     
 <h2 align="center">   
 
-- Fork this repo by tapping  [here](https://github.com/Fortunatusmokaya/DREADED-GPT-AI/fork)
+- Fork this repo by tapping  [here](https://github.com/kanng7/DREADED-GPT-AI/fork)
 
 
 - Upload the creds.json that you received to the dreaded1 folder.
@@ -31,6 +31,10 @@ Linking/Pairing:
      <br>
 
 
+**𝐑𝐔𝐍 𝐕𝐈𝐀 𝐇𝐄𝐑𝐎𝐊𝐔**
+
+https://dashboard.heroku.com/new?template=(add you fork repo link)
+
 
 Termux procedure is given below.
  
@@ -40,7 +44,7 @@ Termux procedure is given below.
 
 ```bash
 $ pkg install git nodejs -y
-$ git clone https://github.com/Fortunatusmokaya/DREADED-GPT-AI
+$ git clone https://github.com/kanng7/DREADED-GPT-AI
 $ cd DREADED-GPT-AI
 $ npm install
 ```
@@ -52,12 +56,12 @@ $ node index.js
 ```
 
 
-Incase of any issues, contact me  [here](https://wa.me/+254114018035) via WhatsApp or [here](mokayafortunatus@gmail.com) via Email.
+Incase of any issues, contact me  [here](https://wa.me/+254743551416) via WhatsApp or [here](kiddomalibu@gmail.com) via Email.
 
 
 ## License
 
-[MIT License](https://github.com/Fortunatusmokaya/DREADED-GPT-AI/blob/main/LICENSE)
+[MIT License](https://github.com/kanng7/DREADED-GPT-AI/blob/main/LICENSE)
 
-Copyright (c) 2023 Dreaded-GPT-AI
+Copyright (c) 2023 𝐃𝐑𝐄𝐀𝐃𝐄𝐃 𝐌𝐀𝐋𝐈𝐁𝐔 𝐆𝐏𝐓 𝐀𝐈
 
