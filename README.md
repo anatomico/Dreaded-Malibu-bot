@@ -31,9 +31,12 @@ Linking/Pairing:
      <br>
 
 
+𝐍𝐁 𝐀𝐅𝐓𝐄𝐑 𝐆𝐄𝐓𝐓𝐈𝐍𝐆 𝐓𝐇𝐄 𝐏𝐀𝐈𝐑𝐂𝐎𝐃𝐄 𝐀𝐃𝐃 𝐅𝐈𝐋𝐄 𝐓𝐎 𝐃𝐑𝐄𝐀𝐃𝐄𝐃 𝟏 𝐅𝐎𝐋𝐃𝐄𝐑
+
+
 **𝐑𝐔𝐍 𝐕𝐈𝐀 𝐇𝐄𝐑𝐎𝐊𝐔**
 
-https://dashboard.heroku.com/new?template=(add you fork repo link)
+https://dashboard.heroku.com/new?template= (add you fork repo link)
 
 
 Termux procedure is given below.
