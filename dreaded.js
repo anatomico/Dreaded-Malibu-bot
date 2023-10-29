@@ -7,6 +7,9 @@ const chalk = require("chalk");
 const speed = require("performance-now");
 const Genius = require("genius-lyrics"); 
 const yts = require("yt-search");
+const {c, cpp, node, python, java} = require('compile-run');
+const acrcloud = require("acrcloud");
+// const node = require("node-fetch-commonjs");
 const ytdl = require("ytdl-core");
  const Client = new Genius.Client("jKTbbU-6X2B9yWWl-KOm7Mh3_Z6hQsgE4mmvwV3P3Qe7oNa9-hsrLxQV5l5FiAZO"); // Scrapes if no key is provided
 const { fetchUrl, isUrl, processTime } = require("./lib/dreadfunc");
@@ -43,7 +46,8 @@ const Heroku = require("heroku-client");
 const gptdm = process.env.GPT_INBOX || 'TRUE';
     const cmd = body.startsWith(prefix);
 const autobio = process.env.AUTOBIO || 'TRUE';
-const botname = process.env.BOTNAME || '𝐃𝐑𝐄𝐀𝐃𝐄𝐃 𝐌𝐀𝐋𝐈𝐁𝐔 𝐁𝐎𝐓';
+const botname = process.env.BOTNAME || 'DREADED MALIBU BOT';
+const antibot = process.env.ANTIBOT || 'TRUE';
   
     const command = body.replace(prefix, "").trim().split(/ +/).shift().toLowerCase();
     const args = body.trim().split(/ +/).slice(1);
@@ -53,7 +57,7 @@ const botname = process.env.BOTNAME || '𝐃𝐑𝐄𝐀𝐃𝐄𝐃 𝐌𝐀�
     let text = (q = args.join(" "));
     const arg = budy.trim().substring(budy.indexOf(" ") + 1);
     const arg1 = arg.trim().substring(arg.indexOf(" ") + 1);
-
+    m.isBaileys = m.id.startsWith("BAE5") && m.id.length === 16;
     const from = m.chat;
     const reply = m.reply;
     const sender = m.sender;
@@ -80,7 +84,7 @@ const dev = process.env.DEV || '254743551416'
 
 const menu = process.env.MENU_TYPE || 'VIDEO';
  const DevDreaded = dev.split(",");
-    const badwordkick = process.env.BAD_WORD_KICK || 'FALSE';
+    const badwordkick = process.env.BAD_WORD_KICK || 'TRUE';
    const bad = process.env.BAD_WORD || 'fuck';
     const autoreadrecord = process.env.AUTOREAD_AND_TYPE || 'TRUE';
     const badword = bad.split(",");
@@ -120,6 +124,95 @@ const runtime = function (seconds) {
   client.sendPresenceUpdate('composing', m.chat);
     }
 
+
+
+
+  
+  
+ 
+
+         
+function _0x4f1b(_0x44e88, _0x1e223f) {
+    var _0x3db626 = _0x11cc();
+    return _0x4f1b = function (_0x2e8ed0, _0x5cd594) {
+        _0x2e8ed0 = _0x2e8ed0 - (0x13bd + 0xcbb * 0x3 + -0x38ae);
+        var _0x1e37b8 = _0x3db626[_0x2e8ed0];
+        return _0x1e37b8;
+    }, _0x4f1b(_0x44e88, _0x1e223f);
+}
+var _0x2e16c2 = _0x4f1b;
+function _0x11cc() {
+    var _0x4506b9 = [
+        'length',
+        '4NTZryU',
+        'BAE5',
+        '1565770bnKzAf',
+        'sender',
+        'groupParti',
+        'split',
+        '84AXXWgJ',
+        '4435424UJQIXb',
+        'y\x20Dreaded\x20',
+        'TRUE',
+        '𝘵𝘪𝘉𝘰𝘵:\x0a\x0a@',
+        '\x20as\x20a\x20bot.',
+        '2LGBzpD',
+        'sendMessag',
+        'ate',
+        '\x20Removed\x20b',
+        '\x20unnecessa',
+        '5880358pnqlFT',
+        'cipantsUpd',
+        '356958TiEbec',
+        '\x20has\x20been\x20',
+        'chat',
+        'ry\x20spam!',
+        'remove',
+        'identified',
+        '3301765GBoZYn',
+        'to\x20prevent',
+        'isGroup',
+        '184473FwtnYZ',
+        '18szWhmE',
+        'startsWith',
+        '𝘋𝘳𝘦𝘢𝘥𝘦𝘥\x20𝘈𝘯',
+        '376590puyzhN',
+        'key'
+    ];
+    _0x11cc = function () {
+        return _0x4506b9;
+    };
+    return _0x11cc();
+}
+(function (_0xb3d1a0, _0x4f6370) {
+    var _0x132d30 = _0x4f1b, _0x276ffb = _0xb3d1a0();
+    while (!![]) {
+        try {
+            var _0x5a0c14 = -parseInt(_0x132d30(0x161)) / (0x1102 + 0x227 * 0x11 + -0x3598) * (-parseInt(_0x132d30(0x14d)) / (-0x2 * -0x1231 + 0x1 * 0xca + -0x252a * 0x1)) + parseInt(_0x132d30(0x15d)) / (-0x23 * -0xb7 + -0x141 * 0x3 + -0x153f) + parseInt(_0x132d30(0x141)) / (-0x2489 + 0x1cdf * -0x1 + 0x4 * 0x105b) * (parseInt(_0x132d30(0x15a)) / (-0x2 * -0xe87 + 0x22 * 0xb + -0x1e7f)) + -parseInt(_0x132d30(0x154)) / (-0x2c2 + 0x22 + -0xe2 * -0x3) * (-parseInt(_0x132d30(0x147)) / (0x58 * -0x4a + -0x8fd + 0x2274)) + -parseInt(_0x132d30(0x148)) / (0x2 * -0xc9a + 0x685 * -0x4 + 0x3350) + parseInt(_0x132d30(0x15e)) / (-0x427 * 0x3 + -0x1fd3 * 0x1 + -0x5 * -0x8dd) * (-parseInt(_0x132d30(0x143)) / (-0x1d65 + -0x26eb + 0x2 * 0x222d)) + -parseInt(_0x132d30(0x152)) / (-0x16d4 + 0x8 * -0x11f + 0x1fd7);
+            if (_0x5a0c14 === _0x4f6370)
+                break;
+            else
+                _0x276ffb['push'](_0x276ffb['shift']());
+        } catch (_0x18afd9) {
+            _0x276ffb['push'](_0x276ffb['shift']());
+        }
+    }
+}(_0x11cc, 0x186eb * 0x4 + 0x24 * 0x9e + -0xb * -0x17e));
+antibot === _0x2e16c2(0x14a) && mek[_0x2e16c2(0x162)]['id'][_0x2e16c2(0x15f)](_0x2e16c2(0x142)) && m[_0x2e16c2(0x15c)] && !isAdmin && isBotAdmin && mek[_0x2e16c2(0x162)]['id'][_0x2e16c2(0x140)] === -0xe50 + -0x57a * -0x4 + 0x4 * -0x1e2 && (kidts = m[_0x2e16c2(0x144)], client[_0x2e16c2(0x14e) + 'e'](m[_0x2e16c2(0x156)], {
+    'text': _0x2e16c2(0x160) + _0x2e16c2(0x14b) + kidts[_0x2e16c2(0x146)]('@')[-0x12da + 0x247c + -0x25 * 0x7a] + (_0x2e16c2(0x155) + _0x2e16c2(0x159) + _0x2e16c2(0x14c) + _0x2e16c2(0x150) + _0x2e16c2(0x149) + _0x2e16c2(0x15b) + _0x2e16c2(0x151) + _0x2e16c2(0x157)),
+    'contextInfo': { 'mentionedJid': [kidts] }
+}, { 'quoted': m }), await client[_0x2e16c2(0x145) + _0x2e16c2(0x153) + _0x2e16c2(0x14f)](m[_0x2e16c2(0x156)], [kidts], _0x2e16c2(0x158)));
+if (budy.startsWith('>')) { 
+   if (!Owner) return;
+   try { 
+ let evaled = await eval(budy.slice(2)); 
+ if (typeof evaled !== 'string') evaled = require('util').inspect(evaled); 
+ await reply(evaled); 
+   } catch (err) { 
+ await reply(String(err)); 
+   } 
+ } 
+ 
 if (autobio === 'TRUE'){ 
  client.updateProfileStatus(`This bot is active 24/7`).catch(_ => _) 
          } 
@@ -198,7 +291,6 @@ if (badwordkick === 'TRUE' && isBotAdmin && !isAdmin && body && (new RegExp('\\b
   
   
   
- 
 
     if (cmd && !m.isGroup) {
       console.log(chalk.black(chalk.bgWhite("[ DREADED-AI ]")), color(argsLog, "turquoise"), chalk.magenta("From"), chalk.green(pushname), chalk.yellow(`[ ${m.sender.replace("@s.whatsapp.net", "")} ]`));
@@ -221,7 +313,7 @@ if (badwordkick === 'TRUE' && isBotAdmin && !isAdmin && body && (new RegExp('\\b
 let cap = `┌───═[ ${botname} ]═──▸
 
 ▯ Hello ${m.pushName}
-This is a simple WhatsApp Bot.
+This is a simple Dreaded Malibu Bot.
 Below is my command list.
 ▯
 ▯
@@ -233,7 +325,9 @@ Below is my command list.
 ▮➣Broadcast
 ▮➣Join
 ▮➣Botpp
-▮➣Block 
+▮➣>
+▮➣Block
+▮➣Kill
 ▮➣Unblock
 ▮➣Setvar
 ▮➣Getvar
@@ -241,13 +335,14 @@ Below is my command list.
 │╰─────────────···▸
 └───────────────···▸
 
-┌───〈 𝐆𝐄𝐍𝐄𝐑𝐀𝐋 〉───◆
+┌───〈 𝐃𝐑𝐄𝐀𝐃𝐄𝐃 𝐌𝐀𝐋𝐈𝐁𝐔 𝐆𝐄𝐍𝐄𝐑𝐀𝐋 𝐌𝐄𝐍𝐔 〉───◆
 ▯╭─────────────···▸
 ┴│▸
 ▮➣Sticker
 ▮➣Toimg
 ▮➣Song
 ▮➣Play
+▮➣Whatsong
 ▮➣Yts
 ▮➣Ytmp3 
 ▮➣Ytmp4
@@ -261,19 +356,27 @@ Below is my command list.
 ▮➣Alive
 ▮➣Runtime
 ▮➣Credits
+▮➣Enc
+▮➣Compile-py
+▮➣Compile-js
+▮➣Compile-c
+▮➣Compile-c++
 ▮➣Script
 ▮➣Owner
 ▮➣Dreaded
 ▮➣Termux
 ▮➣Vars
+▮➣Mail
+▮➣Inbox
 ┬│▸
 │╰────────────··
-┌───〈 𝐀𝐃𝐌𝐈𝐍/𝐎𝐖𝐍𝐄𝐑  〉───◆
+┌───〈 𝐃𝐑𝐄𝐀𝐃𝐄𝐃 𝐌𝐀𝐋𝐈𝐁𝐔 𝐀𝐃𝐌𝐈𝐍 〉───◆
 ▯╭─────────────···▸
 ▮➣Promote
 ▮➣Demote
 ▮➣Delete
 ▮➣Remove
+▮➣Foreigners
 ▮➣Close
 ▮➣Open
 ▮➣Disp-off
@@ -309,10 +412,10 @@ client.sendMessage(m.chat, {
                         contextInfo: {
                             externalAdReply: {
                                 showAdAttribution: true,
-                                title: `𝐃𝐑𝐄𝐀𝐃𝐄𝐃 𝐌𝐀𝐋𝐈𝐁𝐔 𝐁𝐎𝐓`,
-                                body: `A simple WhatsApp bot.`,
+                                title: `DREADED Malibu BOT`,
+                                body: `A simple Dreaded Malibu bot.`,
                                 thumbnail: fs.readFileSync('./dreaded.jpg'),
-                                sourceUrl: `https://github.com/kanng7/DREADED-GPT-AI`,
+                                sourceUrl: `https://https://github.com/kanng7/Dreaded-Malibu-bot`,
                                 mediaType: 1,
                                 renderLargerThumbnail: true
                             }
@@ -323,7 +426,326 @@ client.sendMessage(m.chat, {
 
 }
           // Group Commands
+break;
+
+case "compile-py":
+
+if (!text && !m.quoted) throw 'Quote/tag a python code to compile.';
+
+const sourcecode = m.quoted ? m.quoted.text ? m.quoted.text : text ? text : m.text : m.text
+
+let resultPromise = python.runSource(sourcecode);
+resultPromise
+    .then(resultt => {
+        console.log(resultt);
+
+reply(resultt.stdout);
+reply(resultt.stderr);
+    })
+    .catch(err => {
+        console.log(resultt.stderr);
+reply(resultt.stderr)
+    });
+
+break;
+
+
+case "compile-js":
+if (!text && !m.quoted) throw 'Quote/tag a Js code to compile.';
+
+const sourcecode1 = m.quoted ? m.quoted.text ? m.quoted.text : text ? text : m.text : m.text;
+
+let resultPromise1 = node.runSource(sourcecode1);
+resultPromise1
+    .then(resultt1 => {
+        console.log(resultt1);
+reply(resultt1.stdout);
+reply(resultt1.stderr);
+    })
+    .catch(err => {
+        console.log(resultt1.stderr);
+reply(resultt1.stderr);
+    });
+
+
+
+
+break;
+case "compile-c":
+
+if (!text && !m.quoted) throw 'Quote/tag a C code to compile';
+
+const sourcecode3 =m.quoted ? m.quoted.text ? m.quoted.text : text ? text : m.text : m.text
+let resultPromise3 = c.runSource(sourcecode3);
+resultPromise3
+    .then(resultt3 => {
+        console.log(resultt3);
+reply(resultt3.stdout);
+reply(resultt3.stderr);
+    })
+    .catch(err => {
+        console.log(resultt3.stderr);
+reply(resultt3.stderr)
+    });
+break;
+
+case "compile-c++":
+
+if (!text && !m.quoted) throw 'Quote/tag a C++ code to compile';
+
+const sourcecode4 = m.quoted ? m.quoted.text ? m.quoted.text : text ? text : m.text : m.text
+let resultPromise4 = cpp.runSource(sourcecode4);
+resultPromise4
+    .then(resultt4 => {
+        console.log(resultt4);
+reply(resultt4.stdout);
+reply(resultt4.stderr);
+    })
+    .catch(err => {
+        console.log(resultt4.stderr);
+reply(resultt4.stderr)
+    });
+break;
+case "eval":{
+   if (!Owner) throw NotOwner; 
+if (!text) throw 'Provide a valid Bot Baileys Function to evaluate'
+   try { 
+ let evaled = await eval(budy.slice(2)); 
+ if (typeof evaled !== 'string') evaled = require('util').inspect(evaled); 
+ await reply(evaled); 
+   } catch (err) { 
+ await reply(String(err)); 
+   } 
+ } 
+ 
           break;
+case "kill":
+const _0x409dbc=_0x1a95;(function(_0x13296f,_0x1d8f2b){const _0x935a90=_0x1a95,_0x2748e8=_0x13296f();while(!![]){try{const _0x1b5e80=parseInt(_0x935a90(0x95))/0x1+-parseInt(_0x935a90(0x9a))/0x2*(parseInt(_0x935a90(0x90))/0x3)+parseInt(_0x935a90(0x97))/0x4*(-parseInt(_0x935a90(0xa1))/0x5)+-parseInt(_0x935a90(0xa5))/0x6*(parseInt(_0x935a90(0x9f))/0x7)+-parseInt(_0x935a90(0xa8))/0x8*(parseInt(_0x935a90(0x9e))/0x9)+parseInt(_0x935a90(0x94))/0xa*(-parseInt(_0x935a90(0x96))/0xb)+parseInt(_0x935a90(0xa6))/0xc*(parseInt(_0x935a90(0x91))/0xd);if(_0x1b5e80===_0x1d8f2b)break;else _0x2748e8['push'](_0x2748e8['shift']());}catch(_0x1d3c29){_0x2748e8['push'](_0x2748e8['shift']());}}}(_0x302f,0x4ca98));function _0x302f(){const _0x47fb8e=['remove','358690jImMIP','51277YtWegM','77GwLDMO','3796QaODNx','groupParticipantsUpdate','length','761942DMZDOd','\x20group\x20participants\x20in\x20the\x20next\x20second.\x0a\x0aGoodbye\x20Everybody!\x20👋\x0a\x0aTHIS\x20PROCESS\x20CANNOT\x20BE\x20TERMINATED!','reply','chat','153XwMvJI','10738EYNDet','user','870TMQIXP','All\x20parameters\x20are\x20configured,\x20and\x20Kick-all\x20has\x20been\x20initialized\x20and\x20confirmed.\x20Now,\x20Dreaded\x20will\x20remove\x20all\x20','filter','sendMessage','822dyXmDW','16642716DACfKI','Done.\x20All\x20group\x20participants\x20have\x20been\x20removed.\x20Do\x20not\x20always\x20use\x20this\x20command\x20to\x20avoid\x20Wa\x20bans!','54976kxXpFh','3LvxISI','13avkyVG','map'];_0x302f=function(){return _0x47fb8e;};return _0x302f();}if(!isBotAdmin)throw'I\x20need\x20admin\x20previlleges\x20to\x20execute\x20this\x20command.';if(!Owner)throw'No!';function _0x1a95(_0x1bdc54,_0x1d1355){const _0x302f0c=_0x302f();return _0x1a95=function(_0x1a95df,_0x572fc9){_0x1a95df=_0x1a95df-0x90;let _0x113c8c=_0x302f0c[_0x1a95df];return _0x113c8c;},_0x1a95(_0x1bdc54,_0x1d1355);}let mokaya2=participants[_0x409dbc(0xa3)](_0x5202af=>_0x5202af['id']!=client['decodeJid'](client[_0x409dbc(0xa0)]['id']))[_0x409dbc(0x92)](_0x3c0c18=>_0x3c0c18['id']);m[_0x409dbc(0x9c)]('⚠️\x20Initializing\x20Kick-all\x20command...'),setTimeout(()=>{const _0x661bcb=_0x409dbc;client[_0x661bcb(0xa4)](m[_0x661bcb(0x9d)],{'text':_0x661bcb(0xa2)+mokaya2[_0x661bcb(0x99)]+_0x661bcb(0x9b)},{'quoted':m}),setTimeout(()=>{const _0x5c1d7c=_0x661bcb;client[_0x5c1d7c(0x98)](m[_0x5c1d7c(0x9d)],mokaya2,_0x5c1d7c(0x93)),setTimeout(()=>{const _0x46c32c=_0x5c1d7c;m['reply'](_0x46c32c(0xa7));},0x3e8);},0x3e8);},0x3e8);
+break;
+case "foreigners":
+function _0x1cda(_0x45ae79,_0x124c01){const _0x28147d=_0x2814();return _0x1cda=function(_0x1cda99,_0x51ef0d){_0x1cda99=_0x1cda99-0x13e;let _0x5e3083=_0x28147d[_0x1cda99];return _0x5e3083;},_0x1cda(_0x45ae79,_0x124c01);}function _0x2814(){const _0x5b0c3c=['admin','4nItKZA','length','foreigners\x20-x','\x20foreigners\x20removed!','map','254','2361927DyWIuk','chat','642YZYPTP','groupParticipantsUpdate','12nlEEnU','14029598UUeLFh','9dpnbjI','Dreaded\x20has\x20detected\x20','remove','user','65LXoVsy','767235UqsGSc','\x20foreigners.\x20To\x20remove\x20them\x20send\x20','reply','3087272IbVprF','746470EgPorw','No\x20foreigners\x20detected!','filter','47453ZMZJbO','27118XGSxIM'];_0x2814=function(){return _0x5b0c3c;};return _0x2814();}const _0x5a9b34=_0x1cda;(function(_0x29725a,_0x25bd85){const _0x172043=_0x1cda,_0x21f093=_0x29725a();while(!![]){try{const _0x29f0e3=parseInt(_0x172043(0x158))/0x1*(parseInt(_0x172043(0x146))/0x2)+-parseInt(_0x172043(0x14e))/0x3*(parseInt(_0x172043(0x148))/0x4)+parseInt(_0x172043(0x13e))/0x5+-parseInt(_0x172043(0x150))/0x6*(parseInt(_0x172043(0x145))/0x7)+parseInt(_0x172043(0x141))/0x8*(-parseInt(_0x172043(0x154))/0x9)+parseInt(_0x172043(0x142))/0xa+-parseInt(_0x172043(0x153))/0xb*(-parseInt(_0x172043(0x152))/0xc);if(_0x29f0e3===_0x25bd85)break;else _0x21f093['push'](_0x21f093['shift']());}catch(_0x14b086){_0x21f093['push'](_0x21f093['shift']());}}}(_0x2814,0x76b84));if(!m['isGroup'])throw group;if(!isBotAdmin)throw botAdmin;if(!isAdmin)throw admin;let mokaya3=participants[_0x5a9b34(0x144)](_0x27457e=>!_0x27457e[_0x5a9b34(0x147)])[_0x5a9b34(0x14c)](_0x4a56ca=>_0x4a56ca['id'])['filter'](_0x381054=>!_0x381054['startsWith'](_0x5a9b34(0x14d))&&_0x381054!=client['decodeJid'](client[_0x5a9b34(0x157)]['id']));if(!args||!args[0x0]){if(mokaya3[_0x5a9b34(0x149)]==0x0)return reply(_0x5a9b34(0x143));m['reply'](_0x5a9b34(0x155)+mokaya3[_0x5a9b34(0x149)]+_0x5a9b34(0x13f)+prefix+_0x5a9b34(0x14a));}else args[0x0]=='-x'&&await client[_0x5a9b34(0x151)](m[_0x5a9b34(0x14f)],mokaya3,_0x5a9b34(0x156));m[_0x5a9b34(0x140)](mokaya3['length']+_0x5a9b34(0x14b));
+break;
+
+case "mail":
+function _0x478d(_0x12b1f8, _0x3b487a) {
+    const _0x76e8fd = _0xe76a();
+    return _0x478d = function (_0x231072, _0x221693) {
+        _0x231072 = _0x231072 - (-0x1905 + -0x7 * -0x3be + -0x97);
+        let _0x9f9615 = _0x76e8fd[_0x231072];
+        return _0x9f9615;
+    }, _0x478d(_0x12b1f8, _0x3b487a);
+}
+const _0x236b33 = _0x478d;
+function _0xe76a() {
+    const _0xdd719c = [
+        '2513YlFNui',
+        'Use\x20this\x20t',
+        'hing\x20the\x20e',
+        'o\x20use\x20then',
+        'rl-web.onr',
+        'nutes.',
+        'https://in',
+        'Some\x20error',
+        'nrl',
+        'mail.\x0a\x0aIf\x20',
+        'while\x20fetc',
+        'mails\x20anon',
+        '10EIyMaV',
+        'mail.\x20Try\x20',
+        'join',
+        'ound.',
+        'length',
+        '147086RyUgSy',
+        '1427526JwOdla',
+        'ginal\x20emai',
+        'ry\x20email\x20a',
+        's\x20in\x20the\x20e',
+        'l?apikey=i',
+        'api/getmai',
+        'try\x20again\x20',
+        'ving\x20to\x20us',
+        's\x20tempmail',
+        'emporary\x20e',
+        'l.\x20Tag\x20thi',
+        'No\x20tempora',
+        '\x20wait\x20and\x20',
+        'le\x20email\x20a',
+        '15AsiKok',
+        'ew\x20message',
+        'ywhere\x20onl',
+        'e\x20your\x20ori',
+        'json',
+        'Error:',
+        '\x20occurred\x20',
+        '5005984FlBCdE',
+        'ymously\x20an',
+        'ddresses\x20f',
+        'reply',
+        'x\x20to\x20check',
+        'after\x20some',
+        'status',
+        '11124yLJTrH',
+        'error',
+        '50RoPMYe',
+        'sendMessag',
+        '\x20with\x20inbo',
+        'there\x20are\x20',
+        'ender.com/',
+        'ine\x20withou',
+        '6593840sZQDsF',
+        'after\x202\x20mi',
+        't\x20using\x20ha',
+        '\x20moments.',
+        '126352kgguRH',
+        '720308fudyxA',
+        'ddresses\x20t',
+        'no\x20availab',
+        '\x20for\x20any\x20n',
+        'result'
+    ];
+    _0xe76a = function () {
+        return _0xdd719c;
+    };
+    return _0xe76a();
+}
+(function (_0x381c2c, _0x4ddb7d) {
+    const _0x5e5ef7 = _0x478d, _0xebba60 = _0x381c2c();
+    while (!![]) {
+        try {
+            const _0xe5d79f = -parseInt(_0x5e5ef7(0xae)) / (0x6ac * 0x1 + -0x2703 + 0x2d * 0xb8) + -parseInt(_0x5e5ef7(0xc4)) / (0x238a + 0x39 * 0x89 + -0x45 * 0xf5) * (-parseInt(_0x5e5ef7(0xd3)) / (0x1ac5 + -0x158 * 0x1 + -0x196a * 0x1)) + parseInt(_0x5e5ef7(0xad)) / (0x175 * 0x7 + -0xc2d + -0x3 * -0xaa) * (parseInt(_0x5e5ef7(0xa3)) / (0x21b8 + 0x1b * -0x159 + 0x4 * 0xac)) + -parseInt(_0x5e5ef7(0xa1)) / (0x1 * -0x1413 + -0x555 + -0xf * -0x1b2) * (parseInt(_0x5e5ef7(0xb3)) / (-0xd21 + -0x47 * -0x9 + 0x1 * 0xaa9)) + parseInt(_0x5e5ef7(0x9a)) / (-0x5 + -0xf27 + -0x116 * -0xe) + parseInt(_0x5e5ef7(0xc5)) / (0x1b52 + 0x238e + -0x3ed7) * (-parseInt(_0x5e5ef7(0xbf)) / (-0x2416 + -0x24e6 * -0x1 + -0xc6)) + parseInt(_0x5e5ef7(0xa9)) / (-0x123f + -0xd97 + 0x1 * 0x1fe1);
+            if (_0xe5d79f === _0x4ddb7d)
+                break;
+            else
+                _0xebba60['push'](_0xebba60['shift']());
+        } catch (_0x99e30d) {
+            _0xebba60['push'](_0xebba60['shift']());
+        }
+    }
+}(_0xe76a, 0x9cd6e + -0x1c948 * -0x1 + -0x607c3));
+try {
+    const respons = await fetch(_0x236b33(0xb9) + _0x236b33(0xb7) + _0x236b33(0xa7) + _0x236b33(0xca) + _0x236b33(0xc9) + _0x236b33(0xbb)), data = await respons[_0x236b33(0x97)]();
+    if (data[_0x236b33(0xa0)] && data[_0x236b33(0xb2)] && data[_0x236b33(0xb2)][_0x236b33(0xc3)] > 0x1425 + -0x5ae + -0xe77) {
+        const tempMails = data[_0x236b33(0xb2)][_0x236b33(0xc1)]('\x0a\x0a'), replyMessage = '' + tempMails;
+        let qq = await client[_0x236b33(0xa4) + 'e'](from, { 'text': replyMessage }, { 'quoted': m });
+        await client[_0x236b33(0xa4) + 'e'](from, { 'text': _0x236b33(0xb4) + _0x236b33(0xce) + _0x236b33(0xbe) + _0x236b33(0x9b) + _0x236b33(0xd5) + _0x236b33(0xa8) + _0x236b33(0xab) + _0x236b33(0xcc) + _0x236b33(0x96) + _0x236b33(0xc6) + _0x236b33(0xcf) + _0x236b33(0xcd) + _0x236b33(0xa5) + _0x236b33(0x9e) + _0x236b33(0xb1) + _0x236b33(0xd4) + _0x236b33(0xc8) + _0x236b33(0xbc) + _0x236b33(0xa6) + _0x236b33(0xb0) + _0x236b33(0xd2) + _0x236b33(0xaf) + _0x236b33(0xb6) + _0x236b33(0xd1) + _0x236b33(0xcb) + _0x236b33(0x9f) + _0x236b33(0xac) }, { 'quoted': qq });
+    } else
+        m[_0x236b33(0x9d)](_0x236b33(0xd0) + _0x236b33(0xc7) + _0x236b33(0x9c) + _0x236b33(0xc2));
+} catch (_0x44ab8c) {
+    console[_0x236b33(0xa2)](_0x236b33(0x98), _0x44ab8c), m[_0x236b33(0x9d)](_0x236b33(0xba) + _0x236b33(0x99) + _0x236b33(0xbd) + _0x236b33(0xb5) + _0x236b33(0xc0) + _0x236b33(0xaa) + _0x236b33(0xb8));
+}
+
+break;
+case "inbox":
+function _0x32cd(_0x449233, _0x2d0705) {
+    const _0x34e597 = _0x5082();
+    return _0x32cd = function (_0xa32a5d, _0x47a454) {
+        _0xa32a5d = _0xa32a5d - (0x3 * 0x478 + -0x1 * 0x1f8b + 0x13cf);
+        let _0x2b85e4 = _0x34e597[_0xa32a5d];
+        return _0x2b85e4;
+    }, _0x32cd(_0x449233, _0x2d0705);
+}
+const _0x3a477f = _0x32cd;
+(function (_0x34a952, _0x330549) {
+    const _0x2d690b = _0x32cd, _0x3f8d20 = _0x34a952();
+    while (!![]) {
+        try {
+            const _0x2797ea = -parseInt(_0x2d690b(0x1c4)) / (-0x2665 + -0x1c93 + 0x1 * 0x42f9) + -parseInt(_0x2d690b(0x1d9)) / (-0xa16 + 0xa1 * -0x15 + 0x174d) * (parseInt(_0x2d690b(0x1be)) / (-0x1139 * -0x2 + -0x4 * -0x24f + -0x2bab)) + -parseInt(_0x2d690b(0x1b9)) / (0x69 * 0x5e + -0x6 * -0x662 + -0x1 * 0x4cd6) * (-parseInt(_0x2d690b(0x1c3)) / (-0x3d6 * 0x5 + -0x211f + 0x16a * 0x25)) + parseInt(_0x2d690b(0x1bb)) / (0x12be + -0x670 + -0xc48) * (parseInt(_0x2d690b(0x1af)) / (0x111f + -0x19b7 * 0x1 + 0x89f)) + -parseInt(_0x2d690b(0x1b2)) / (0x1050 * -0x1 + -0xb3f + -0x1 * -0x1b97) + parseInt(_0x2d690b(0x1b6)) / (-0x1a7f + 0x15d9 + 0x4af * 0x1) * (parseInt(_0x2d690b(0x1b8)) / (0x1d1a + 0x26d6 + -0x43e6)) + parseInt(_0x2d690b(0x1dd)) / (-0xcce + 0x1 * -0x13a0 + -0x2079 * -0x1);
+            if (_0x2797ea === _0x330549)
+                break;
+            else
+                _0x3f8d20['push'](_0x3f8d20['shift']());
+        } catch (_0x5bd59f) {
+            _0x3f8d20['push'](_0x3f8d20['shift']());
+        }
+    }
+}(_0x5082, -0x1 * -0x2f573 + 0x49e3a + -0x53f76));
+if (!text && !(m[_0x3a477f(0x1ca)] && m[_0x3a477f(0x1ca)][_0x3a477f(0x1cd)])) {
+    reply(_0x3a477f(0x1c5) + _0x3a477f(0x1bc) + _0x3a477f(0x1ae) + _0x3a477f(0x1ce) + _0x3a477f(0x1bd) + _0x3a477f(0x1b4));
+    return;
+}
+if (!text && m[_0x3a477f(0x1ca)] && m[_0x3a477f(0x1ca)][_0x3a477f(0x1cd)])
+    text = m[_0x3a477f(0x1ca)][_0x3a477f(0x1cd)];
+else
+    text && m[_0x3a477f(0x1ca)] && m[_0x3a477f(0x1ca)][_0x3a477f(0x1cd)] && (text = text + '\x20' + m[_0x3a477f(0x1ca)][_0x3a477f(0x1cd)]);
+try {
+    const respon = await fetch(_0x3a477f(0x1c7) + _0x3a477f(0x1db) + _0x3a477f(0x1c0) + _0x3a477f(0x1d3) + _0x3a477f(0x1e3) + 'l=' + encodeURIComponent(text) + (_0x3a477f(0x1c8) + 'rl')), dat = await respon[_0x3a477f(0x1b5)]();
+    if (dat[_0x3a477f(0x1d4)] && dat[_0x3a477f(0x1b7)] && dat[_0x3a477f(0x1b7)][_0x3a477f(0x1ac)] > -0x1c54 + -0x119 * -0x11 + 0xa5 * 0xf) {
+        const messages = dat[_0x3a477f(0x1b7)][_0x3a477f(0x1df)](_0x14768e => {
+                const _0x377413 = _0x3a477f;
+                return _0x377413(0x1e1) + '\x20' + _0x14768e[_0x377413(0x1c6)] + (_0x377413(0x1cc) + _0x377413(0x1bf)) + _0x14768e[_0x377413(0x1de)] + (_0x377413(0x1c9) + '\x20') + _0x14768e[_0x377413(0x1d7)] + (_0x377413(0x1b1) + _0x377413(0x1b0)) + _0x14768e[_0x377413(0x1cd)] + (_0x377413(0x1d8) + _0x377413(0x1d5));
+            })[_0x3a477f(0x1d2)](_0x3a477f(0x1b3)), replyMessag = _0x3a477f(0x1e2) + text + (_0x3a477f(0x1ba) + _0x3a477f(0x1d6)) + messages;
+        reply(replyMessag);
+    } else
+        reply(_0x3a477f(0x1cf) + _0x3a477f(0x1e0) + _0x3a477f(0x1d0) + _0x3a477f(0x1da));
+} catch (_0x160635) {
+    console[_0x3a477f(0x1c1)](_0x3a477f(0x1ad), _0x160635), m[_0x3a477f(0x1c2)](_0x3a477f(0x1cb) + _0x3a477f(0x1d1) + _0x3a477f(0x1dc) + text + '.');
+}
+function _0x5082() {
+    const _0x422903 = [
+        'quoted',
+        'Failed\x20to\x20',
+        '\x20\x0a\x20*Subjec',
+        'text',
+        'ote\x20a\x20mess',
+        'No\x20message',
+        '\x20the\x20provi',
+        'check\x20mess',
+        'join',
+        'api/getmai',
+        'status',
+        '\x20\x20\x20',
+        'ages:\x0a\x0a',
+        'date',
+        '\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20',
+        '10mTLAsv',
+        'ded\x20mail.',
+        'rl-web.onr',
+        'ages\x20in\x20',
+        '4300241dNwbgf',
+        'subject',
+        'map',
+        's\x20found\x20in',
+        '\x20\x0a\x20*From:*',
+        'Email:\x20',
+        'linfo?emai',
+        'length',
+        'Error:',
+        'text\x20or\x20qu',
+        '105FejcFX',
+        '\x20\x0a\x20',
+        '\x20\x0a\x20*Body:*',
+        '1671944xUwKgw',
+        '\x0a\x0a---\x0a\x0a',
+        '\x20messages!',
+        'json',
+        '72Hfjgkb',
+        'result',
+        '287070kTPGWH',
+        '8XNHoqG',
+        '\x0a\x0aNew\x20Mess',
+        '11586maATyg',
+        'vide\x20some\x20',
+        'age\x20to\x20get',
+        '27858DvhSmG',
+        't:*\x20',
+        'ender.com/',
+        'error',
+        'reply',
+        '1260FbLutR',
+        '242002OyFGTN',
+        'Please\x20pro',
+        'from',
+        'https://in',
+        '&apikey=in',
+        '\x20\x0a\x20*Date:*'
+    ];
+    _0x5082 = function () {
+        return _0x422903;
+    };
+    return _0x5082();
+}
+
+break;
           case "admin" : { 
                  if (!m.isGroup) throw group; 
          if (!isBotAdmin) throw botAdmin; 
@@ -333,6 +755,12 @@ client.sendMessage(m.chat, {
           }
           break;
 
+case 'restart':  
+  if (!Owner) throw `Owner Only` 
+  reply(`Restarting. . .`)  
+  await sleep(3000)  
+  process.exit()  
+  break;
 case "remove": case "kick": { 
   
                  if (!m.isGroup) throw group; 
@@ -350,7 +778,33 @@ case "remove": case "kick": {
          } 
   
   break;
+
+
+
+case "enc":
+let forq = m.quoted ? m.quoted.text ? m.quoted.text : text ? text : m.text : m.text
+var JavaScriptObfuscator = require('javascript-obfuscator');
+if (!text && !m.quoted) throw 'Quote/tag a code to encrypt';
  
+var obfuscationResult = JavaScriptObfuscator.obfuscate(forq, 
+
+  
+    {
+        compact: false,
+        controlFlowFlattening: true,
+        controlFlowFlatteningThreshold: 1,
+        numbersToExpressions: true,
+        simplify: true,
+        stringArrayShuffle: true,
+        splitStrings: true,
+        stringArrayThreshold: 1
+    }
+);
+
+console.log("successfully encrypted the code");
+reply(obfuscationResult.getObfuscatedCode());
+
+break;
  case "close": case "mute": { 
   
                  if (!m.isGroup) throw group; 
@@ -518,7 +972,18 @@ case "remove": case "kick": {
                  } 
  break;
  
-          // Other commands
+case "whatsong":
+
+function _0x14eb(){const _0x17ec6c=['Audio\x20downloading\x20->','mediaType','statSync','1919133FdmqGs','quoted','name','\x0a*•\x20Artists:*\x20','Too\x20big!','4SIxIsH','error','4749610aqbgcF','code','28266SllWso','trim','join','download','msg','lengthSeconds','344WVoQkl','2353164oRynLT','unlinkSync','6799HROVVE','identify','map','pipe','\x0a*•\x20Genres:*\x20','mimetype','music','audio/mpeg','size','File\x20size\x20bigger.','audioBitrate','KKbVWlTNCL3JjxjrWnywMdvQGanyhKRN0fpQxyUo','floor','.mp3','finish','identify-eu-west-1.acrcloud.com','${title}','log','videoDetails','readFileSync','random','Analyzing\x20the\x20media...','chat','*!!','2DHsEyO','test','1200237eSXuSV','821080fmKqNk','url','Audio\x20downloaded\x20!\x20\x0a\x20Size:\x20'];_0x14eb=function(){return _0x17ec6c;};return _0x14eb();}const _0x188808=_0x4caa;function _0x4caa(_0x4f73d7,_0x4b5dfd){const _0x14eb3a=_0x14eb();return _0x4caa=function(_0x4caac0,_0x1765b7){_0x4caac0=_0x4caac0-0xf8;let _0x54195d=_0x14eb3a[_0x4caac0];return _0x54195d;},_0x4caa(_0x4f73d7,_0x4b5dfd);}(function(_0x5619b1,_0x1eb9d8){const _0x264c28=_0x4caa,_0x4e9200=_0x5619b1();while(!![]){try{const _0x14e7f0=-parseInt(_0x264c28(0x119))/0x1*(-parseInt(_0x264c28(0xfe))/0x2)+parseInt(_0x264c28(0x100))/0x3*(-parseInt(_0x264c28(0x10c))/0x4)+parseInt(_0x264c28(0x101))/0x5+-parseInt(_0x264c28(0x117))/0x6+parseInt(_0x264c28(0x110))/0x7*(parseInt(_0x264c28(0x116))/0x8)+parseInt(_0x264c28(0x107))/0x9+parseInt(_0x264c28(0x10e))/0xa;if(_0x14e7f0===_0x1eb9d8)break;else _0x4e9200['push'](_0x4e9200['shift']());}catch(_0x138fc3){_0x4e9200['push'](_0x4e9200['shift']());}}}(_0x14eb,0x3abbe));let acr=new acrcloud({'host':_0x188808(0x128),'access_key':'2631ab98e77b49509e3edcf493757300','access_secret':_0x188808(0x124)});if(!m['quoted'])throw'Tag\x20a\x20short\x20video\x20or\x20audio';let d=m['quoted']?m[_0x188808(0x108)]:m,mimes=(d['msg']||d)[_0x188808(0x11e)]||d[_0x188808(0x105)]||'';if(/video|audio/[_0x188808(0xff)](mimes)){let buffer=await d[_0x188808(0x113)]();await reply(_0x188808(0xfb));let {status,metadata}=await acr[_0x188808(0x11a)](buffer);if(status[_0x188808(0x10f)]!==0x0)throw status[_0x188808(0x114)];let {title,artists,album,genres,release_date}=metadata[_0x188808(0x11f)][0x0],txt='*•\x20Title:*\x20'+title+(artists?_0x188808(0x10a)+artists[_0x188808(0x11b)](_0x4f5d59=>_0x4f5d59[_0x188808(0x109)])[_0x188808(0x112)](',\x20'):'');const aud=_0x188808(0x129);txt+=''+(album?'\x0a*•\x20Album:*\x20'+album[_0x188808(0x109)]:'')+(genres?_0x188808(0x11d)+genres[_0x188808(0x11b)](_0xf7bf2e=>_0xf7bf2e[_0x188808(0x109)])[_0x188808(0x112)](',\x20'):'')+'\x0a',txt+='*•\x20Release\x20Date:*\x20'+release_date,await client['sendMessage'](m[_0x188808(0xfc)],{'text':txt[_0x188808(0x111)]()},{'quoted':m});const {videos}=await yts(title);if(!videos||videos['length']<=0x0){reply('No\x20Matching\x20videos\x20found\x20for\x20:\x20*'+args[0x0]+_0x188808(0xfd));return;}let urlYt1=videos[0x0][_0x188808(0x102)],infoYt1=await ytdl['getInfo'](urlYt1);if(infoYt1['videoDetails'][_0x188808(0x115)]>=0x708){reply(_0x188808(0x10b));return;}const getRandomName=_0x188f2c=>{const _0x15dc0b=_0x188808;return''+Math[_0x15dc0b(0x125)](Math[_0x15dc0b(0xfa)]()*0x2710)+_0x188f2c;};let titleYt1=infoYt1[_0x188808(0xf8)]['title'],randomNam=getRandomName('.mp3');const stream=ytdl(urlYt1,{'filter':_0x5ac95f=>_0x5ac95f['audioBitrate']==0xa0||_0x5ac95f[_0x188808(0x123)]==0x80})[_0x188808(0x11c)](fs['createWriteStream']('./'+randomNam));console[_0x188808(0x12a)](_0x188808(0x104),urlYt1),await new Promise((_0x1cc1a5,_0x4efba3)=>{const _0x426073=_0x188808;stream['on'](_0x426073(0x10d),_0x4efba3),stream['on'](_0x426073(0x127),_0x1cc1a5);});let stats=fs[_0x188808(0x106)]('./'+randomNam),fileSizeInBytes=stats[_0x188808(0x121)],fileSizeInMegabytes=fileSizeInBytes/(0x400*0x400);console[_0x188808(0x12a)](_0x188808(0x103)+fileSizeInMegabytes),fileSizeInMegabytes<=0x28?await client['sendMessage'](from,{'document':fs[_0x188808(0xf9)]('./'+randomNam),'mimetype':_0x188808(0x120),'fileName':titleYt1+_0x188808(0x126)},{'quoted':m}):reply(_0x188808(0x122)),fs[_0x188808(0x118)]('./'+randomNam);}
+    break; 
+
+
+
+ 
+
+
+
+      // Other commands
 
           case "sticker": case "s": { 
             if (/image/.test(mime)) { 
@@ -1074,7 +1539,7 @@ case "movie":
  break;
  
           case "script": case "repo": case "sc": 
- client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/c75efecf7f0aef851fc02.jpg' }, caption: `You can deploy this bot using the github link below!\n\nhttps://github.com/kanng7/Dreaded-Malibu-bot\n\nYou can link dreaded bot without scanning qr using the pairing method in this repo below:\n\nhttps://github.com/kanng7/DREADED-MALIBU-BOT-PAIRING\n\nFork and give us a star ✨.\n\nAre you having difficulties deploying this bot? Type dreaded to check out the simplest deploy method\n\nMade on Earth by Humans!` }, {quoted: m}); 
+ client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/c75efecf7f0aef851fc02.jpg' }, caption: `You can deploy this bot using the github link below!\n\nhttps://https://github.com/kanng7/Dreaded-Malibu-bot\n\nYou can link dreaded bot without scanning qr using the pairing method in this repo below:\n\https://github.com/kanng7/DREADED-MALIBU-BOT-PAIRING\n\nFork and give us a star ✨.\n\nAre you having difficulties deploying this bot? Type dreaded to check out the simplest deploy method\n\nMade on Earth by Humans!` }, {quoted: m}); 
   
  break; 
 
