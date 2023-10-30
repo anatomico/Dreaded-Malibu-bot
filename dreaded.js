@@ -313,8 +313,8 @@ if (badwordkick === 'TRUE' && isBotAdmin && !isAdmin && body && (new RegExp('\\b
 let cap = `┌───═[ ${botname} ]═──▸
 
 ▯ Hello ${m.pushName}
-This is a simple Dreaded Malibu Bot.
-Below is my command list.
+𝐬𝐢𝐦𝐩𝐥𝐞 𝐛𝐨𝐭 𝐦𝐚𝐝𝐞 𝐛𝐲 𝐦𝐚𝐥𝐢𝐛𝐮
+𝐄𝐧𝐣𝐨𝐲 𝐲𝐨𝐮𝐫 𝐭𝐢𝐦𝐞 𝐰𝐢𝐭𝐡 𝐦𝐞
 ▯
 ▯
 └───────────────···▸
@@ -335,7 +335,7 @@ Below is my command list.
 │╰─────────────···▸
 └───────────────···▸
 
-┌───〈 𝐃𝐑𝐄𝐀𝐃𝐄𝐃 𝐌𝐀𝐋𝐈𝐁𝐔 𝐆𝐄𝐍𝐄𝐑𝐀𝐋 𝐌𝐄𝐍𝐔 〉───◆
+┌───〈 𝐃𝐑𝐄𝐀𝐃𝐄𝐃 𝐆𝐄𝐍𝐄𝐑𝐀𝐋 𝐌𝐄𝐍𝐔 〉───◆
 ▯╭─────────────···▸
 ┴│▸
 ▮➣Sticker
@@ -413,7 +413,7 @@ client.sendMessage(m.chat, {
                             externalAdReply: {
                                 showAdAttribution: true,
                                 title: `DREADED Malibu BOT`,
-                                body: `A simple Dreaded Malibu bot.`,
+                                body: `𝐋𝐞𝐭𝐬 𝐦𝐚𝐤𝐞 𝐭𝐡𝐞 𝐰𝐨𝐫𝐥𝐝 𝐚 𝐛𝐞𝐭𝐭𝐞𝐫 𝐩𝐥𝐚𝐜𝐞`,
                                 thumbnail: fs.readFileSync('./dreaded.jpg'),
                                 sourceUrl: `https://https://github.com/kanng7/Dreaded-Malibu-bot`,
                                 mediaType: 1,
