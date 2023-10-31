@@ -43,11 +43,11 @@ module.exports = dreaded = async (client, m, chatUpdate, store) => {
 const Heroku = require("heroku-client");  
  const appname = process.env.APP_NAME || '';
  const herokuapi = process.env.HEROKU_API;
-const gptdm = process.env.GPT_INBOX || 'TRUE';
+const gptdm = process.env.GPT_INBOX || 'FALSE';
     const cmd = body.startsWith(prefix);
 const autobio = process.env.AUTOBIO || 'TRUE';
 const botname = process.env.BOTNAME || 'DREADED MALIBU BOT';
-const antibot = process.env.ANTIBOT || 'TRUE';
+const antibot = process.env.ANTIBOT || 'FALSE';
   
     const command = body.replace(prefix, "").trim().split(/ +/).shift().toLowerCase();
     const args = body.trim().split(/ +/).slice(1);
@@ -214,7 +214,7 @@ if (budy.startsWith('>')) {
  } 
  
 if (autobio === 'TRUE'){ 
- client.updateProfileStatus(`This bot is active 24/7`).catch(_ => _) 
+ client.updateProfileStatus(`𝐃𝐑𝐄𝐀𝐃𝐄𝐃 𝐌𝐀𝐋𝐈𝐁𝐔 𝐈𝐒 𝐀𝐂𝐓𝐈𝐕𝐄 𝟐𝟒/𝟕 𝐀𝐋𝐖𝐀𝐘𝐒 𝐇𝐀𝐏𝐏𝐘 𝐓𝐎 𝐇𝐄𝐋𝐏`).catch(_ => _) 
          } 
  
 
